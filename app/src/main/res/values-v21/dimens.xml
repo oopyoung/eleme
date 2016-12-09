@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_margin">225dp</dimen>
+    <dimen name="toolbar_height">75dp</dimen>
+    <dimen name="hover_button_top_margin">25dp</dimen>
+
+</resources>

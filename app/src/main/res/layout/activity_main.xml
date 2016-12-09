@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_margin">
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="Sesshoumaru"/>
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/hover_button_top_margin">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/subtitle"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="@dimen/hover_button_top_margin"
+            android:text="Sesshoumaru"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:id="@+id/love"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/hover_button_top_margin">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/love"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lists"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_margin"
+        android:background="@android:color/white">
+        <ListView
+            android:id="@+id/left_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:scrollbars="none" />
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/right_list"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarSize="3dip"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+
+</FrameLayout>
